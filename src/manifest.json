@@ -1,0 +1,32 @@
+{
+  "name": "ChatGPT for Search",
+  "description": "Display ChatGPT response alongside Search results",
+  "version": "1.1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "logo.png",
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "host_permissions": ["https://*.openai.com/"],
+  "background": {
+    "service_worker": "background/index.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/search*",
+        "https://*/s?*"
+      ],
+      "include_globs": [
+        "*.google.*/*",
+        "*.toutiao.*/*",
+        "*.baidu.*/*",
+        "*.bing.*/*"
+      ],
+      "js": ["content-script/index.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
