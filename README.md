@@ -1,6 +1,6 @@
 # ChatGPT for Search
 
-A browser extension to display ChatGPT response alongside **Google/Baidu/Toutiao/Bing** Search results, supports Chrome/Edge/Firefox.
+A browser extension to display ChatGPT response alongside **Google/Baidu/Toutiao/Bing** Search results.
 
 ![screenshot](screenshot.png)
 
